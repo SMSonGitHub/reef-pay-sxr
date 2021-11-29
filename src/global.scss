@@ -1,0 +1,25 @@
+$mainColor:  black;
+$mainColor2:  rgb(251, 62, 134);
+$mainColor3:  rgb(44, 2, 77);
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+
+body{
+    overflow-y: hidden;
+
+    main{
+        height: 100vh;
+    }
+
+    .scrollable{
+        overflow-y: scroll;
+    }
+}
+
